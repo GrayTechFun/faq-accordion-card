@@ -1,0 +1,132 @@
+html {
+  font-size: 62.5%;
+  overflow: visible;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #9a4be7;
+  overflow: visible;
+}
+
+.wrapper {
+  width: 35em;
+  height: 60em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 1em;
+  margin-top: 9em;
+  overflow: visible;
+}
+
+.leftcol {
+  width: 35em;
+  height: 20em;
+}
+
+.para {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-left: 5em;
+  font-size: 3em;
+  margin-top: -1em;
+}
+
+p {
+  font-size: 1.3rem;
+  color: #a4a3ab;
+}
+
+.para img {
+  width: 1em;
+  height: 1em;
+}
+
+.first {
+  display: flex;
+  gap: 9em;
+}
+
+.first p {
+  margin-left: 1em;
+}
+
+.first img {
+  margin-top: 1.5em;
+}
+.second img {
+  margin-top: 2.5em;
+}
+.third img {
+  margin-top: 1.5em;
+}
+.forth img {
+  margin-top: 1.5em;
+}
+.fifth img {
+  margin-top: 1.5em;
+}
+
+.second {
+  display: flex;
+  gap: 8em;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+.second h5 {
+  margin-left: 1em;
+}
+
+.unique {
+  margin-left: 2.2em;
+  margin-top: -0.5em;
+}
+
+.third {
+  display: flex;
+  gap: 14em;
+}
+
+.third p {
+  margin-left: 1em;
+}
+
+.forth {
+  display: flex;
+  gap: 14em;
+}
+
+.forth p {
+  margin-left: 1em;
+}
+
+.fifth {
+  display: flex;
+  gap: 11em;
+}
+
+.fifth p {
+  margin-left: 1em;
+}
+
+hr {
+  width: 30em;
+  border: 0.5px solid #e4e4e4;
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
