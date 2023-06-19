@@ -8,12 +8,15 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #9a4be7;
-  overflow: visible;
+}
+
+.box {
+  visibility: hidden;
 }
 
 .wrapper {
   width: 35em;
-  height: 60em;
+  height: 55em;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -23,9 +26,21 @@ body {
   overflow: visible;
 }
 
-.leftcol {
+.images {
+  width: 35em;
+  height: 35em;
+  background-image: url(../images/illustration-woman-online-mobile.svg),
+    url(../images//bg-pattern-mobile.svg);
+  background-position: 5em -1em, 5em 10em;
+  background-repeat: no-repeat;
+  background-size: 25em;
+  margin-top: -10em;
+}
+
+.rightcol {
   width: 35em;
   height: 20em;
+  margin-top: -8em;
 }
 
 .para {
@@ -93,6 +108,13 @@ h5 {
   margin-top: -0.5em;
 }
 
+.res {
+  margin-left: 2.2em;
+  margin-top: -0.5em;
+  font-size: 1.3rem;
+  color: #a4a3ab;
+}
+
 .third {
   display: flex;
   gap: 14em;
@@ -126,7 +148,38 @@ hr {
 }
 
 @media only screen and (min-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+  .box {
+    visibility: visible;
+    width: 10em;
+    height: 10em;
+    margin-top: 35em;
+    margin-left: -5em;
+  }
   .wrapper {
     flex-direction: row;
+    width: 80em;
+    height: 50em;
+  }
+
+  .rightcol {
+    margin-top: 8em;
+    margin-left: -15em;
+  }
+
+  h1 {
+    margin-left: 1em;
+  }
+
+  .images {
+    width: 50em;
+    height: 60em;
+
+    background-image: url(../images/illustration-woman-online-desktop.svg),
+      url(../images/bg-pattern-desktop.svg);
+    background-size: 30em, 80em;
+    background-position: -5em 25em, -55em -10em;
   }
 }
